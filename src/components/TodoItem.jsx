@@ -7,11 +7,7 @@ export default function TodoItem({ id, title, completed }) {
 
   return (
     <>
-      <ListGroup.Item
-        className={`d-flex align-items-center justify-content-between ${
-          completed && "border-primary"
-        }`}
-      >
+      <ListGroup.Item className="d-flex align-items-center justify-content-between">
         <Form.Check
           className={`fs-5 d-flex align-items-center gap-4 ${
             completed && "text-decoration-line-through"

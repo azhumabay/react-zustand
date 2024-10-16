@@ -4,7 +4,7 @@ import TodoItem from "./TodoItem";
 export default function TodoList({ todos }) {
   return (
     <>
-      <ListGroup>
+      <ListGroup >
         {todos.map(({ id, title, completed }) => (
           <TodoItem key={id} id={id} title={title} completed={completed} />
         ))}
